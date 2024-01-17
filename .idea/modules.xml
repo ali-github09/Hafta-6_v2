@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DatebaseApp/DatebaseApp.iml" filepath="$PROJECT_DIR$/DatebaseApp/DatebaseApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hafta6-v2.iml" filepath="$PROJECT_DIR$/Hafta6-v2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Notepad/Notepad.iml" filepath="$PROJECT_DIR$/Notepad/Notepad.iml" />
     </modules>

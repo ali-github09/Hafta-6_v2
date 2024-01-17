@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class NotepadUygulamasi {
 
     public static void main(String[] args) {
+
         try {
             Scanner scanner = new Scanner(System.in);
 
@@ -12,7 +13,7 @@ public class NotepadUygulamasi {
             String metin = scanner.nextLine();
 
             // Metni dosyaya kaydet
-            dosyayaKaydet("notlar.txt", metin);
+           dosyayaKaydet("notlar.txt", metin);
 
             // En son kaydedilen metni ekrana yazdır
             String enSonKaydedilenMetin = dosyadanOku("notlar.txt");
@@ -23,14 +24,14 @@ public class NotepadUygulamasi {
         }
     }
 
-    private static void dosyayaKaydet(String dosyaAdi, String metin) throws IOException {
-        try (PrintWriter printWriter = new PrintWriter(new FileWriter(dosyaAdi))) {
+    private static void dosyayaKaydet(String dosyanınAdi, String metin) throws IOException {
+        try (PrintWriter printWriter = new PrintWriter(new FileWriter(dosyanınAdi))) {
             printWriter.print(metin);
         }
     }
 
-    private static String dosyadanOku(String dosyaAdi) throws IOException {
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(dosyaAdi))) {
+    private static String dosyadanOku(String dosyanınAdi) throws IOException {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(dosyanınAdi))) {
             return bufferedReader.readLine();
         }
     }
